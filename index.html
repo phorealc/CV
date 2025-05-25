@@ -8,11 +8,12 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f3fdf4;
+      background: url('https://i.imgur.com/Mo5oUZz.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #1e392a;
     }
     header {
-      background-color: #2a7034; /* vert foncé Cocoworld */
+      background-color: rgba(42, 112, 52, 0.85);
       text-align: center;
       padding: 2rem;
       color: white;
@@ -38,13 +39,12 @@
       margin: auto;
     }
     .skills, .projects, .contact {
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 1.5rem;
       margin: 1rem 0;
       border-left: 6px solid #2a7034;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      color: #1e392a;
     }
     h2 {
       margin-top: 0;
@@ -64,7 +64,6 @@
     .contact a:hover {
       text-decoration: underline;
     }
-    /* Bouton Discord */
     .btn-discord {
       display: inline-block;
       background-color: #7289da;
@@ -80,9 +79,40 @@
     .btn-discord:hover {
       background-color: #5b6eae;
     }
+
+    /* Bouton Play musique */
+    .music-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .music-button button {
+      background-color: #2a7034;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+    .music-button button:hover {
+      background-color: #1d4d25;
+    }
   </style>
 </head>
 <body>
+
+<!-- Audio Song of Storms -->
+<audio id="song" loop>
+  <source src="https://dl.sndup.net/f2h4/Song%20of%20Storms.mp3" type="audio/mpeg">
+  Ton navigateur ne supporte pas l'audio HTML5.
+</audio>
+
+<div class="music-button">
+  <button onclick="document.getElementById('song').play()">🎵 Activer la musique</button>
+</div>
 
 <header>
   <img src="https://minotar.net/helm/Phorealc/120.png" alt="Skin Minecraft de Phorealc">
@@ -115,6 +145,11 @@
       Rejoindre Cococlub Discord
     </a>
   </div>
+</section>
+
+</body>
+</html>
+
 </section>
 
 </body>
