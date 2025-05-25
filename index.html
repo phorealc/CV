@@ -8,24 +8,32 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #f3fdf4;
+      color: #1e392a;
     }
     header {
-      background-color: #ffcc66;
+      background-color: #2a7034; /* vert foncé Cocoworld */
       text-align: center;
       padding: 2rem;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
     header img {
       border-radius: 10px;
       width: 120px;
       height: 120px;
+      margin-bottom: 1rem;
     }
     h1 {
       margin: 0.5rem 0 0;
     }
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 1.1rem;
+      color: #d0ffd9;
+    }
     .section {
-      padding: 2rem;
+      padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
     }
@@ -33,20 +41,52 @@
       background-color: #fff;
       padding: 1.5rem;
       margin: 1rem 0;
+      border-left: 6px solid #2a7034;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      color: #1e392a;
+    }
+    h2 {
+      margin-top: 0;
+      color: #2a7034;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
     }
     .contact a {
-      color: #0066cc;
+      color: #2a7034;
+      font-weight: bold;
       text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    /* Bouton Discord */
+    .btn-discord {
+      display: inline-block;
+      background-color: #7289da;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+      box-shadow: 0 3px 6px rgba(114, 137, 218, 0.4);
+    }
+    .btn-discord:hover {
+      background-color: #5b6eae;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="https://minotar.net/helm/PhorealC/120.png" alt="Skin Minecraft de PhorealC">
-  <h1>PhorealC</h1>
+  <img src="https://minotar.net/helm/Phorealc/120.png" alt="Skin Minecraft de Phorealc">
+  <h1>Phorealc</h1>
   <p>16 ans – Configurateur confirmé & apprenti dev plugin</p>
 </header>
 
@@ -64,13 +104,16 @@
 
   <div class="projects">
     <h2>Projet principal</h2>
-    <p><strong>Cocoworld</strong> – Un serveur minecraft semi rp vanillia, je participe au developpement du serveur minecraft et je fais parti de Direction Artistique.</p>
+    <p><strong>Cocoworld</strong> – Un serveur minecraft semi RP vanilla, je participe au développement du serveur et fais partie de la Direction Artistique.</p>
   </div>
 
   <div class="contact">
     <h2>Contact</h2>
     <p>📧 Email : <a href="mailto:phorealc@gmail.com">phorealc@gmail.com</a></p>
     <p>💬 Discord : <strong>Phorealc</strong></p>
+    <a class="btn-discord" href="https://discord.gg/2NEGvd2WGH" target="_blank" rel="noopener noreferrer">
+      Rejoindre Cococlub Discord
+    </a>
   </div>
 </section>
 
