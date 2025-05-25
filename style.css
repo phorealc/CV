@@ -2,11 +2,11 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f3fdf4;
+  background-color: #f3fdf4; /* Fond vert très clair Cocoworld */
   color: #1e392a;
 }
 
-/* En-tête du site */
+/* En-tête */
 header {
   background-color: #2a7034; /* Vert foncé Cocoworld */
   text-align: center;
@@ -40,7 +40,7 @@ header p {
   margin: auto;
 }
 
-/* Cartes de contenu */
+/* Cartes (Compétences / Projets / Contact) */
 .skills,
 .projects,
 .contact {
@@ -52,7 +52,7 @@ header p {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Titres de sections */
+/* Titres de section */
 h2 {
   margin-top: 0;
   color: #2a7034;
@@ -67,7 +67,7 @@ li {
   margin-bottom: 0.6rem;
 }
 
-/* Liens */
+/* Liens de contact */
 .contact a {
   color: #2a7034;
   font-weight: bold;
@@ -77,26 +77,28 @@ li {
 .contact a:hover {
   text-decoration: underline;
 }
-/* Bouton musique */
-.music-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
 
-.music-button button {
-  background-color: #2a7034;
+/* Bouton Discord centré */
+.btn-discord {
+  display: inline-block;
+  background-color: #7289da;
   color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  text-decoration: none;
   transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 3px 6px rgba(114, 137, 218, 0.4);
 }
 
-.music-button button:hover {
-  background-color: #205527;
+/* Effet hover Discord */
+.btn-discord:hover {
+  background-color: #5b6eae;
+}
+
+/* Centrage du bouton dans la section contact */
+.contact {
+  text-align: center;
 }
 
