@@ -77,3 +77,26 @@ li {
 .contact a:hover {
   text-decoration: underline;
 }
+/* Bouton musique */
+.music-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.music-button button {
+  background-color: #2a7034;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.music-button button:hover {
+  background-color: #205527;
+}
+
