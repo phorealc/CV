@@ -1,0 +1,79 @@
+/* Style général */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3fdf4;
+  color: #1e392a;
+}
+
+/* En-tête du site */
+header {
+  background-color: #2a7034; /* Vert foncé Cocoworld */
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header img {
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0 0;
+}
+
+header p {
+  margin: 0.3rem;
+  font-size: 1.1rem;
+  color: #d0ffd9;
+}
+
+/* Conteneur principal */
+.section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Cartes de contenu */
+.skills,
+.projects,
+.contact {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 6px solid #2a7034;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres de sections */
+h2 {
+  margin-top: 0;
+  color: #2a7034;
+}
+
+/* Listes */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+
+/* Liens */
+.contact a {
+  color: #2a7034;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
