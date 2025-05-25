@@ -1,117 +1,48 @@
-/* Style général */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3fdf4;
-  color: #1e392a;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phorealc – Mon CV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-/* En-tête du site */
-header {
-  background-color: #2a7034; /* Vert foncé Cocoworld */
-  text-align: center;
-  padding: 2rem 1rem;
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
+<!-- 🎵 Audio -->
+<audio autoplay loop>
+  <source src="song-of-storms.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas l'audio HTML5.
+</audio>
 
-header img {
-  border-radius: 10px;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 1rem;
-}
+<header>
+  <!-- 👤 Affichage de la tête uniquement -->
+  <img src="https://minotar.net/avatar/PhorealC/120.png" alt="Tête Minecraft de Phorealc">
+  <h1>Phorealc</h1>
+  <p>16 ans – Configurateur confirmé & apprenti dev plugin</p>
+</header>
 
-h1 {
-  font-size: 2rem;
-  margin: 0.5rem 0 0;
-}
+<section class="section">
+  <div class="skills">
+    <h2>Compétences</h2>
+    <ul>
+      <li>🛠️ Développement de plugins Minecraft (en apprentissage)</li>
+      <li>⚙️ Configuration avancée de plugins (Spigot, Skript, etc.)</li>
+      <li>🎬 Montage vidéo (CapCut)</li>
+      <li>📅 Organisation de projets (ClickUp, coordination de serveur)</li>
+      <li>🌐 Anglais niveau Seconde (B1+)</li>
+    </ul>
+  </div>
 
-header p {
-  margin: 0.3rem;
-  font-size: 1.1rem;
-  color: #d0ffd9;
-}
-
-/* Conteneur principal */
-.section {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Cartes de contenu */
-.skills,
-.projects,
-.contact {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  margin: 1rem 0;
-  border-left: 6px solid #2a7034;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Titres de sections */
-h2 {
-  margin-top: 0;
-  color: #2a7034;
-}
-
-/* Listes */
-ul {
-  padding-left: 1.2rem;
-}
-
-li {
-  margin-bottom: 0.6rem;
-}
-
-/* Liens dans la section contact */
-.contact a {
-  color: #2a7034;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
-/* Style du bouton Discord */
-.discord-button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-
-.discord-button {
-  background: linear-gradient(to bottom right, #7289da, #5f73bc);
-  color: white;
-  padding: 0.8rem 1.8rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.discord-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
-
+  <div class="projects">
     <h2>Projet principal</h2>
-    <p><strong>Cocoworld</strong> – Un serveur minecraft semi RP vanilla, je participe au développement du serveur et fais partie de la Direction Artistique.</p>
+    <p><strong>Cocoworld</strong> – Un serveur Minecraft semi-RP vanilla. Je participe au développement et fais partie de la Direction Artistique.</p>
   </div>
 
   <div class="contact">
     <h2>Contact</h2>
     <p>📧 Email : <a href="mailto:phorealc@gmail.com">phorealc@gmail.com</a></p>
     <p>💬 Discord : <strong>Phorealc</strong></p>
-    <a class="btn-discord" href="https://discord.gg/2NEGvd2WGH" target="_blank" rel="noopener noreferrer">
+    <a class="btn-discord" href="https://discord.gg/2NEGvd2WGH" target="_blank">
       Rejoindre Cococlub Discord
     </a>
   </div>
@@ -120,7 +51,3 @@ li {
 </body>
 </html>
 
-</section>
-
-</body>
-</html>
