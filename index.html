@@ -4,7 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Phorealc – Mon CV</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4b8754;
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+    }
+
+    header img {
+      border-radius: 16px;
+      image-rendering: pixelated;
+      width: 120px;
+      height: 120px;
+    }
+
+    section.section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #2c5c3f;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      color: #2c5c3f;
+      text-decoration: none;
+    }
+
+    .discord-button-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .discord-button {
+      background: linear-gradient(135deg, #7289da, #5865f2);
+      color: white;
+      font-weight: bold;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .discord-button i {
+      margin-right: 8px;
+    }
+
+    .discord-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    }
+  </style>
 </head>
 <body>
 
@@ -14,13 +92,14 @@
   Votre navigateur ne supporte pas l'audio HTML5.
 </audio>
 
+<!-- 👤 En-tête avec skin -->
 <header>
-  <!-- 👤 Affichage de la tête uniquement -->
   <img src="https://minotar.net/avatar/PhorealC/120.png" alt="Tête Minecraft de Phorealc">
   <h1>Phorealc</h1>
   <p>16 ans – Configurateur confirmé & apprenti dev plugin</p>
 </header>
 
+<!-- 💼 Contenu principal -->
 <section class="section">
   <div class="skills">
     <h2>Compétences</h2>
@@ -42,12 +121,13 @@
     <h2>Contact</h2>
     <p>📧 Email : <a href="mailto:phorealc@gmail.com">phorealc@gmail.com</a></p>
     <p>💬 Discord : <strong>Phorealc</strong></p>
-    <a class="btn-discord" href="https://discord.gg/2NEGvd2WGH" target="_blank">
-      Rejoindre Cococlub Discord
-    </a>
+    <div class="discord-button-container">
+      <a href="https://discord.gg/2NEGvd2WGH" target="_blank" class="discord-button">
+        <i class="fab fa-discord"></i> Rejoindre Cococlub Discord
+      </a>
+    </div>
   </div>
 </section>
 
 </body>
 </html>
-
