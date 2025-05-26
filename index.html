@@ -7,24 +7,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f8f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3fdf4;
+      color: #1e392a;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #4b8754;
+      background-color: #2a7034;
       text-align: center;
-      padding: 40px 20px;
+      padding: 2rem 1rem;
       color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
     header img {
-      border-radius: 16px;
-      image-rendering: pixelated;
+      border-radius: 10px;
       width: 120px;
       height: 120px;
+      margin-bottom: 1rem;
+      image-rendering: pixelated;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0 0;
+    }
+
+    header p {
+      margin: 0.3rem;
+      font-size: 1.1rem;
+      color: #d0ffd9;
     }
 
     section.section {
@@ -36,23 +50,37 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
+    .skills, .projects, .contact {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-left: 6px solid #2a7034;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
     h2 {
-      color: #2c5c3f;
       margin-top: 0;
+      color: #2a7034;
     }
 
     ul {
+      padding-left: 1.2rem;
       list-style-type: none;
-      padding-left: 0;
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 0.6rem;
     }
 
     .contact a {
-      color: #2c5c3f;
+      color: #2a7034;
+      font-weight: bold;
       text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
 
     .discord-button-container {
@@ -60,7 +88,7 @@
       text-align: center;
     }
 
-    .discord-button {
+    .discord-button, .youtube-button {
       background: linear-gradient(135deg, #7289da, #5865f2);
       color: white;
       font-weight: bold;
@@ -72,13 +100,18 @@
       font-size: 16px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin: 10px 8px;
     }
 
-    .discord-button i {
+    .youtube-button {
+      background: linear-gradient(135deg, #ff4d4d, #c41c1c);
+    }
+
+    .discord-button i, .youtube-button i {
       margin-right: 8px;
     }
 
-    .discord-button:hover {
+    .discord-button:hover, .youtube-button:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
     }
@@ -88,7 +121,7 @@
 
 <!-- 🎵 Audio -->
 <audio autoplay loop>
-  <source src="song-of-storms.mp3" type="audio/mpeg">
+  <source src="Breath of the Wild - Hateno Village.mp3" type="audio/mpeg">
   Votre navigateur ne supporte pas l'audio HTML5.
 </audio>
 
@@ -124,6 +157,9 @@
     <div class="discord-button-container">
       <a href="https://discord.gg/2NEGvd2WGH" target="_blank" class="discord-button">
         <i class="fab fa-discord"></i> Rejoindre Cococlub Discord
+      </a>
+      <a href="https://www.youtube.com/@phorealc" target="_blank" class="youtube-button">
+        <i class="fab fa-youtube"></i> Ma chaîne YouTube
       </a>
     </div>
   </div>
